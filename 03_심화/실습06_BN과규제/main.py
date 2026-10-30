@@ -40,7 +40,7 @@ import time
 # - baseline : 기본 모델
 # - BatchNorm : BatchNorm만 추가
 # - wd0.01 : Weight Decay만 추가
-configs = [{'name': 'baseline', 'bn': False}, {'name': 'BatchNorm', 'bn': True}, {'name': 'wd0.01', 'weight_decay': 0.01}]
+configs = [{'name': 'baseline'}, {'name': 'BatchNorm', 'bn': True}, {'name': 'wd0.01', 'weight_decay': 0.01}]
 # <<< S06
 # 실험 결과 요약 저장
 summary = []
