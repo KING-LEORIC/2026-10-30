@@ -76,7 +76,7 @@ pd.DataFrame(rows).to_csv(out / "experiment_table.csv",index=False)
 # pass
 
 # 선택된 최고 모델의 가중치(state_dict) 저장
-torch.save(model.state_dict(), out / base / "checkpoints" / "best_model.pt")
+torch.save(winner.state_dict(), out / base / "checkpoints" / "best_model.pt")
 
 # <<< S09
 # validation 데이터의 실제값/예측값 저장
